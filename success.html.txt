@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تم إرسال الطلب</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  direction: rtl;
+  background: linear-gradient(135deg, #dcfce7, #f0fdf4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+
+h1 {
+  color: #16a34a;
+}
+
+p {
+  color: #374151;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>✅ تم إرسال طلبك بنجاح</h1>
+
+<p>سيتم التواصل معك قريبًا عبر الهاتف أو البريد الإلكتروني.</p>
+
+<a class="btn" href="index.html">العودة للرئيسية</a>
+
+</div>
+
+</body>
+</html>
