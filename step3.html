@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>استمارة طلب التأشيرة</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  direction: rtl;
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.step {
+  text-align: center;
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #111827;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.file {
+  padding: 10px;
+  background: #f8fafc;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  transform: scale(1.02);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media(max-width:700px){
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="step">الخطوة 2 من 3</div>
+
+<h2>📄 استمارة طلب التأشيرة</h2>
+
+<div class="section grid">
+
+<div>
+<label>الاسم</label>
+<input type="text" placeholder="أدخل الاسم">
+</div>
+
+<div>
+<label>اللقب</label>
+<input type="text" placeholder="أدخل اللقب">
+</div>
+
+<div>
+<label>تاريخ الميلاد</label>
+<input type="date">
+</div>
+
+<div>
+<label>رقم جواز السفر</label>
+<input type="text">
+</div>
+
+<div>
+<label>رقم الهاتف</label>
+<input type="text">
+</div>
+
+<div>
+<label>البريد الإلكتروني</label>
+<input type="email">
+</div>
+
+</div>
+
+<div class="section">
+<h3>📎 رفع الملفات</h3>
+
+<label>صورة جواز السفر</label>
+<input class="file" type="file">
+
+<label>صورة شخصية</label>
+<input class="file" type="file">
+
+<label>كشف الحساب البنكي (3 أشهر)</label>
+<input class="file" type="file">
+
+<label>شهادة الإقامة (إذا كانت مطلوبة)</label>
+<input class="file" type="file">
+</div>
+
+<button class="btn btn-primary" onclick="location.href='step4.html'">
+متابعة إلى الدفع →
+</button>
+
+</div>
+
+</body>
+</html>
