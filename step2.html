@@ -1,3 +1,111 @@
-<h2>اختيار الدولة</h2>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اختيار الطلب</title>
 
-<a href="step3.html">التالي</a>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  direction: rtl;
+  background: linear-gradient(135deg, #e0f2ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  transform: scale(1.03);
+}
+
+.step {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="step">الخطوة 1 من 3</div>
+
+<h2>🌍 اختيار الدولة ونوع التأشيرة</h2>
+
+<label>اختر الدولة</label>
+<select>
+  <option>فرنسا 🇫🇷</option>
+  <option>إسبانيا 🇪🇸</option>
+  <option>إيطاليا 🇮🇹</option>
+  <option>ألمانيا 🇩🇪</option>
+  <option>تركيا 🇹🇷</option>
+</select>
+
+<label>نوع التأشيرة</label>
+<select>
+  <option>سياحية</option>
+  <option>عمل</option>
+  <option>إقامة</option>
+</select>
+
+<button class="btn btn-primary" onclick="location.href='step3.html'">
+التالي →
+</button>
+
+</div>
+
+</body>
+</html>
