@@ -11,52 +11,56 @@ body {
   font-family: Arial;
   direction: rtl;
   background: url('https://images.unsplash.com/photo-1502920514313-52581002a659') center/cover no-repeat;
-  color: white;
 }
 
 .overlay {
   background: rgba(0,0,0,0.6);
   min-height: 100vh;
-  padding: 30px;
-}
-
-header {
+  padding: 40px;
+  color: white;
   text-align: center;
-  padding: 40px 10px;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
 .card {
-  max-width: 700px;
-  margin: auto;
   background: rgba(255,255,255,0.1);
   padding: 20px;
   border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
   backdrop-filter: blur(10px);
-  margin-top: 20px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 25px;
-  background: #1e90ff;
+  margin-top: 20px;
+  padding: 14px 25px;
+  background: #2563eb;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #0d6efd;
+  background: #1e40af;
+  transform: scale(1.05);
 }
 
-footer {
-  text-align: center;
+.footer {
   margin-top: 40px;
   font-size: 14px;
+  opacity: 0.8;
 }
 </style>
 </head>
@@ -65,29 +69,21 @@ footer {
 
 <div class="overlay">
 
-<header>
-  <h1>✈ Travel Visa Support</h1>
-  <p>خدمات استخراج التأشيرات بسرعة وأمان</p>
-</header>
+<h1>✈ Travel Visa Support</h1>
+<p>نساعدك في استخراج التأشيرة بسهولة وسرعة</p>
 
 <div class="card">
   <h2>🌍 خدماتنا</h2>
   <p>✔ تأشيرات سياحية</p>
   <p>✔ تأشيرات عمل</p>
   <p>✔ إقامة ودراسة</p>
+
+  <a href="step2.html" class="btn">ابدأ طلب التأشيرة</a>
 </div>
 
-<div class="card">
-  <h2>ابدأ طلبك الآن</h2>
-  <p>اضغط للانتقال إلى خطوات طلب التأشيرة</p>
-  <a class="btn" <a href="step2.html" style="display:inline-block;padding:14px 25px;background:#2563eb;color:white;text-decoration:none;border-radius:10px;font-size:16px;">
-✈ ابدأ طلب التأشيرة
-</a>
+<div class="footer">
+📧 travelvisa.spport@gmail.com
 </div>
-
-<footer>
-📧 للتواصل: travelvisa.spport@gmail.com
-</footer>
 
 </div>
 
