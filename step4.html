@@ -1,5 +1,147 @@
-<h2>الدفع</h2>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدفع - Travel Visa Support</title>
 
-<p>المبلغ: 90€</p>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  direction: rtl;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  padding: 20px;
+}
 
-<p>تم إنشاء الطلب بنجاح</p>
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.step {
+  text-align: center;
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.price {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #16a34a;
+  margin: 20px 0;
+}
+
+.box {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.method {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.method:hover {
+  background: #e0f2fe;
+  transform: scale(1.03);
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-pay {
+  background: #16a34a;
+  color: white;
+}
+
+.btn-pay:hover {
+  background: #15803d;
+  transform: scale(1.02);
+}
+
+.note {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+  margin-top: 15px;
+}
+
+.email {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="step">الخطوة 3 من 3</div>
+
+<h2>💳 الدفع النهائي</h2>
+
+<div class="price">90 €</div>
+
+<div class="box">
+<h3>اختيار طريقة الدفع</h3>
+
+<div class="methods">
+  <div class="method">💳 Visa</div>
+  <div class="method">💳 MasterCard</div>
+  <div class="method">💰 PayPal</div>
+  <div class="method">🏦 Revolut</div>
+</div>
+</div>
+
+<button class="btn btn-pay" onclick="alert('تم إرسال طلبك بنجاح! سيتم التواصل معك قريبًا.')">
+تأكيد الدفع
+</button>
+
+<p class="note">
+بعد الدفع سيتم التواصل معك عبر الهاتف أو البريد الإلكتروني
+</p>
+
+<div class="email">
+📧 travelvisa.spport@gmail.com
+</div>
+
+</div>
+
+</body>
+</html>
