@@ -3,24 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الدفع - Travel Visa Support</title>
+<title>الدفع الآمن</title>
 
 <style>
 body {
-  margin: 0;
   font-family: Arial;
   direction: rtl;
-  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  background: #f1f5f9;
   padding: 20px;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin: auto;
   background: white;
   padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 h2 {
@@ -28,82 +27,37 @@ h2 {
   color: #1e3a8a;
 }
 
-.step {
-  text-align: center;
-  color: gray;
-  font-size: 13px;
-  margin-bottom: 15px;
-}
-
-.price {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  color: #16a34a;
-  margin: 20px 0;
-}
-
-.box {
-  background: #f1f5f9;
-  padding: 15px;
-  border-radius: 12px;
-  margin-top: 15px;
-}
-
-.methods {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.method {
-  background: white;
+input {
+  width: 100%;
   padding: 12px;
+  margin-top: 10px;
   border-radius: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
+  border: 1px solid #ccc;
 }
 
-.method:hover {
-  background: #e0f2fe;
-  transform: scale(1.03);
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
 }
 
 .btn {
   width: 100%;
   padding: 14px;
+  margin-top: 20px;
   border: none;
   border-radius: 10px;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-pay {
   background: #16a34a;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.btn-pay:hover {
-  background: #15803d;
-  transform: scale(1.02);
-}
-
-.note {
-  text-align: center;
-  font-size: 13px;
-  color: gray;
+.paybox {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
   margin-top: 15px;
-}
-
-.email {
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #1e3a8a;
 }
 </style>
 </head>
@@ -112,36 +66,40 @@ h2 {
 
 <div class="container">
 
-<div class="step">الخطوة 3 من 3</div>
+<h2>💳 الدفع الآمن</h2>
 
-<h2>💳 الدفع النهائي</h2>
+<p>المبلغ: <b>90€</b></p>
 
-<div class="price">90 €</div>
+<div class="paybox">
 
-<div class="box">
-<h3>اختيار طريقة الدفع</h3>
+<h3>معلومات الدفع</h3>
 
-<div class="methods">
-  <div class="method">💳 Visa</div>
-  <div class="method">💳 MasterCard</div>
-  <div class="method">💰 PayPal</div>
-  <div class="method">🏦 Revolut</div>
+<label>الاسم على البطاقة</label>
+<input type="text" required>
+
+<label>رقم البطاقة</label>
+<input type="text" placeholder="**** **** **** ****" required>
+
+<label>تاريخ الانتهاء</label>
+<input type="text" placeholder="MM/YY" required>
+
+<label>CVV</label>
+<input type="text" required>
+
 </div>
-</div>
 
-onclick="location.href='success.html'"
-تأكيد الدفع
+<button class="btn" onclick="payNow()">
+إتمام الدفع
 </button>
 
-<p class="note">
-بعد الدفع سيتم التواصل معك عبر الهاتف أو البريد الإلكتروني
-</p>
-
-<div class="email">
-📧 travelvisa.spport@gmail.com
 </div>
 
-</div>
+<script>
+function payNow() {
+  alert("⚠ هذا نموذج فقط. لعمل دفع حقيقي نربطه بـ Stripe أو PayPal");
+  window.location.href = "success.html";
+}
+</script>
 
 </body>
 </html>
